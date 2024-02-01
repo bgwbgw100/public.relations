@@ -1,0 +1,53 @@
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #E8F5E9;
+}
+.logo-removebg {
+    background-image: url(logo-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.header-nav {
+    float: left;
+    font-size: x-large;
+    margin-top: 20px;
+    padding-left: 20px;
+    color: #263238;
+    cursor: pointer;
+}
+.banner {
+    width: 100%;
+    height: 500px;
+    background-image: url(banner.webp);
+    background-size: 100% 500px;
+    /* 가로는 브라우저 너비에 맞게, 세로는 원본 비율 유지 */
+    background-repeat: no-repeat;
+}
+.main-section {
+    display: flex;
+}
+.main-side {
+    width: 200px;
+    height: calc(100vh - 580px);
+    background-color: #E8F5E9;
+}
+.daily-todolist-logo {
+    background-image: url(TODOLIST.png);
+    width: 280px;
+    height: 280px;
+    background-size: 100% 280px;
+    background-repeat: no-repeat;
+    margin: auto;
+    cursor: pointer;
+}
+.internet-broadcast-logo {
+    background-image: url(internet-boradcast.png);
+    width: 400px;
+    height: 280px;
+    background-size: 100% 280px;
+    background-repeat: no-repeat;
+    margin: auto;
+    cursor: pointer;
+}

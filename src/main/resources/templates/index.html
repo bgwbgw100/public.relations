@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body style="margin: 0px;">
+    <header>
+        <div class="logo-removebg" style="float: left; width: 100px; height: 80px;">
+        </div>
+        <div class="header-nav">
+            HOME
+        </div>
+        <div class="header-nav internet-broadcast">
+            internetbroadcast
+        </div>
+        <div class="header-nav daily-todolist">
+            Daily_ToDoList
+        </div>
+    </header>
+    <div class="banner">
+    </div>
+    <section class="main-section">
+        <div class="main-side">
+        </div>
+        <div style="flex-grow: 1; height: calc(100vh - 580px);">
+            <div style="font-size: xx-large; text-align: center;">
+                My Develop List!
+            </div>
+            <div style="display: flex;">
+                <div style="flex: 1;">
+                    <div style="font-size: x-large; text-align: center;">
+                        internetbroadcast
+                    </div>
+                    <div  class="internet-broadcast-logo internet-broadcast">
+                    </div>
+                </div>
+                <div style="flex: 1; ">
+                    <div style="font-size: x-large; text-align: center;">
+                        Daily_ToDoList
+                    </div>
+                    <div  class="daily-todolist-logo daily-todolist">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-side">
+        </div>
+    </section>
+
+<script>
+    window.onload = ()=>{
+        {
+            const docs = document.querySelectorAll(".internet-broadcast");
+            docs.forEach( doc =>{
+               doc.addEventListener("click",fn_broadCastClick);
+            });
+        }
+        {
+            const docs = document.querySelectorAll(".daily-todolist");
+            docs.forEach( doc =>{
+                doc.addEventListener("click",fn_dailyTodolist);
+            });
+        }
+    }
+    const fn_broadCastClick = () =>{
+        window.location.href = "//www.internetbroadcast.co.kr";
+    }
+    const fn_dailyTodolist = ()=>{
+        window.location.href = "todolist";
+    }
+</script>
+
+</body>
+</html>
